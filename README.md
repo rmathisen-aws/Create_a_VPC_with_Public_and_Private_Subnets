@@ -35,7 +35,7 @@ Available VPCs: select the VPC created in Step 1
 
 **4) Create Route Tables and Associate the Subnets.** <br/>
 VPC → Virtual Private Cloud → Route Tables \
-Notice there is a Route Table here. This is the Main Route Table! \
+Notice there is a Route Table here. This is the Main (default) Route Table! \
 Feel free to rename (MainRouteTable)
 \
 \
