@@ -18,12 +18,12 @@ Tenancy: Default
 VPC → Virtual Private Cloud → Subnets → Create Subnet\
 VPC ID: select the VPC created in Step 1 \
 Subnet Name: PublicSubnet \
-Availability Zone: us-east-1a \
+Availability Zone: us-east-1**a** \
 IPv4 CIDR block: 10.0.**1**.0/24
 
 VPC ID: select the VPC created in Step 1 \
 Subnet Name: PrivateSubnet \
-Availability Zone: us-east-1b \
+Availability Zone: us-east-1**b** \
 IPv4 CIDR block: 10.0.**2**.0/24
 
 **3) Create the Internet Gateway.** <br/>
