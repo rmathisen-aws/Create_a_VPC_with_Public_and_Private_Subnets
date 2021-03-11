@@ -37,7 +37,7 @@ Available VPCs: select the VPC created in Step 1
 VPC → Virtual Private Cloud → Route Tables \
 Notice there is a Route Table here. This is the Main Route Table! \
 Feel free to rename (MainRouteTable)
-<br/>
+\
 \
 VPC → Virtual Private Cloud → Route Tables → Create Route Table \
 Name Tag: PublicRouteTable \
@@ -55,8 +55,24 @@ VPC: select the VPC created in Step 1
 Select PrivateRouteTable → Actions → Edit Subnet Associations \
 Select the PrivateSubnet (IPv4 CIDR 10.0.**2**.0/24)
 
+**5) Add a Route to allow Internet traffic to the Public Subnets.** <br/>
+With the PublicRouteTable selected, \
+Routes (tab) → Edit Routes → Add Route\
+Destination: 0.0.0.0/0 \
+Target: select Internet Gateway, then MyIGW
 
+**6) Clean up!!** <br/>
+Virtual Private Cloud → Internet Gateways \
+Select MyIGW → Actions → Detach from VPC \
+Select MyIGW → Actions → Delete Internet Gateway
 
+Virtual Private Cloud → Subnets \
+Select the Public & Private Subnets → Actions → Delete Subnet
 
+Virtual Private Cloud → Route Tables \
+Select the Public & Private Route Tables → Actions → Delete Route Table \
+(Don't worry about deleting the Main Route Table)
 
-
+Virtual Private Cloud → Your VPCs \
+Select the VPC → Actions → Delete VPC \
+(Deleting the VPC will also delete the Main Route Table)
