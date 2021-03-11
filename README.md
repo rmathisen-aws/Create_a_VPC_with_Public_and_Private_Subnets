@@ -9,5 +9,5 @@
 
 **Process:** <br/>
 \
-**1) ** \
+**1) ** <br/>
 VPC → Virtual Private Cloud → Your VPCs → Create VPC
