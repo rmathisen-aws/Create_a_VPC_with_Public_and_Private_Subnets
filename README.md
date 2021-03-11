@@ -27,3 +27,22 @@ Availability Zone: us-east-1**b** \
 IPv4 CIDR block: 10.0.**2**.0/24
 
 **3) Create the Internet Gateway.** <br/>
+VPC → Virtual Private Cloud → Internet Gateways → Create Internet Gateway\
+Name tag: MyIGW 
+
+Select MyIGW → Actions → Attach to VPC \
+Available VPCs: select the VPC created in Step 1
+
+**4) Create Route Tables.** <br/>
+
+
+
+
+
+
+
+
+
+
+
+
