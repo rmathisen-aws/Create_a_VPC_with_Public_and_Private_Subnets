@@ -9,5 +9,6 @@
 
 **Process:** <br/>
 \
-**1) ** <br/>
+**1) title ** <br/>
 VPC → Virtual Private Cloud → Your VPCs → Create VPC
+IPv4 CIDR block 
