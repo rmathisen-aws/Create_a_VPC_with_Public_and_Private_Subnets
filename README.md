@@ -17,12 +17,12 @@ Tenancy: Default
 **2) Create the Public & Private Subnets.** <br/>
 VPC → Virtual Private Cloud → Subnets → Create Subnet\
 VPC ID: select the VPC created in Step 1 \
-Subnet Name: PublicSubnet \
+Subnet Name: **Public**Subnet \
 Availability Zone: us-east-1**a** \
 IPv4 CIDR block: 10.0.**1**.0/24
 
 VPC ID: select the VPC created in Step 1 \
-Subnet Name: PrivateSubnet \
+Subnet Name: **Private**Subnet \
 Availability Zone: us-east-1**b** \
 IPv4 CIDR block: 10.0.**2**.0/24
 
