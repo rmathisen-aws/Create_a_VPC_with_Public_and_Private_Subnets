@@ -26,7 +26,7 @@ Subnet Name: **Private**Subnet \
 Availability Zone: us-east-1**b** \
 IPv4 CIDR block: 10.0.**2**.0/24
 
-**3) Create the Internet Gateway.** <br/>
+**3) Create the Internet Gateway.** - allows you to connect the Public Subnet to the Internet! <br/>
 VPC → Virtual Private Cloud → Internet Gateways → Create Internet Gateway\
 Name tag: MyIGW 
 
