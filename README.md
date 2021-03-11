@@ -33,13 +33,24 @@ Name tag: MyIGW
 Select MyIGW → Actions → Attach to VPC \
 Available VPCs: select the VPC created in Step 1
 
-**4) Create Route Tables.** <br/>
+**4) Create Route Tables and Associate the Subnets.** <br/>
+VPC → Virtual Private Cloud → Route Tables \
+Notice there is a Route Table here. This is the Main Route Table! \
+Feel free to rename (MainRouteTable)
 
+VPC → Virtual Private Cloud → Route Tables → Create Route Table \
+Name Tag: PublicRouteTable \
+VPC: select the VPC created in Step 1
 
+Select PublicRouteTable → Actions → Edit Subnet Associations \
+Select the PublicSubnet (IPv4 CIDR 10.0.**1**.0/24)
 
+Create another Route Table with the following settings \
+Name Tag: PrivateRouteTable \
+VPC: select the VPC created in Step 1
 
-
-
+Select PrivateRouteTable → Actions → Edit Subnet Associations \
+Select the PrivateSubnet (IPv4 CIDR 10.0.**2**.0/24)
 
 
 
