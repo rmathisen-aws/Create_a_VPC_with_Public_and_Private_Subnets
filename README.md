@@ -37,7 +37,8 @@ Available VPCs: select the VPC created in Step 1
 VPC → Virtual Private Cloud → Route Tables \
 Notice there is a Route Table here. This is the Main Route Table! \
 Feel free to rename (MainRouteTable)
-
+\
+\
 VPC → Virtual Private Cloud → Route Tables → Create Route Table \
 Name Tag: PublicRouteTable \
 VPC: select the VPC created in Step 1
