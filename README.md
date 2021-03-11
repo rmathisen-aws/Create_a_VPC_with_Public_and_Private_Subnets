@@ -10,6 +10,10 @@
 **Process:** <br/>
 \
 **1) Create the VPC.** <br/>
+VPC → Virtual Private Cloud → Your VPCs \
+Notice that there is a VPC that's already been created. This is the Default VPC for this Region. \
+Rename this VPC to 'Default_VPC'
+
 VPC → Virtual Private Cloud → Your VPCs → Create VPC \
 IPv4 CIDR block: 10.0.0.0/16 \
 Tenancy: Default
