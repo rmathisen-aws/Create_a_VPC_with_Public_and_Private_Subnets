@@ -74,6 +74,6 @@ Select the Public & Private Route Tables → Actions → Delete Route Table \
 (Don't worry about deleting the Main Route Table)
 
 Virtual Private Cloud → Your VPCs \
-Do not delete the Default VPC!!
+Do not delete the Default VPC!! \
 Select the VPC we created → Actions → Delete VPC \
 (Deleting the VPC will also delete the Main Route Table)
