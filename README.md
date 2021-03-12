@@ -26,8 +26,7 @@ Keep in mind that Networks with the same IP address ranges cannot communicate wi
 10.1.y.z - this is probably the 2nd most commonly used ranges, as it's a way to avoid the default of 10.0.y.z \
 Avoid ranges all the way up to 10.10.y.z just to be safe \
 10.16.0.0 - this might be a good starting point as it will most likely be not common to use. But, once again, check with the IT staff!
-\
-\
+<br/><br/><br/>
 **2) Create the Public & Private Subnets.** <br/><br/>
 The Network ID for 10.16.0.0/16 is 10.16.y.z with a Subnet Mask of 255.255.0.0 (65,536 IP addresses). \
 We can Subnet this which means to divide Network ID into multiple networks. \
