@@ -44,6 +44,7 @@ We would have the first (2) octects 10.16 being static, then have the freedom to
 16 IP addresses per /28 Subnet x 4096 Individual Subnets = 65,536 IP addresses
 <br/>
 <br/>
+<br/>
 VPC → Virtual Private Cloud → Subnets → Create Subnet\
 VPC ID: select the VPC created in Step 1 \
 Subnet Name: **Public**Subnet \
