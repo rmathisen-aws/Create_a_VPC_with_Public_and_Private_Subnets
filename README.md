@@ -26,7 +26,9 @@ Keep in mind that Networks with the same IP address ranges cannot communicate wi
 10.1.y.z - this is probably the 2nd most commonly used ranges, as it's a way to avoid the default of 10.0.y.z \
 Avoid ranges all the way up to 10.10.y.z just to be safe \
 10.16.0.0 - this might be a good starting point as it will most likely be not common to use. But, once again, check with the IT staff!
-<br/><br/><br/>
+<br/>
+<br/>
+<br/>
 **2) Create the Public & Private Subnets.** <br/><br/>
 The Network ID for 10.16.0.0/16 is 10.16.y.z with a Subnet Mask of 255.255.0.0 (65,536 IP addresses). \
 We can Subnet this which means to divide Network ID into multiple networks. \
@@ -54,16 +56,18 @@ VPC ID: select the VPC created in Step 1 \
 Subnet Name: **Private**Subnet \
 Availability Zone: us-east-1**b** \
 IPv4 CIDR block: 10.16.0.**2**/24
-\
-\
+<br/>
+<br/>
+<br/>
 **3) Create the Internet Gateway.** - allows you to connect the Public Subnet to the Internet! <br/>
 VPC → Virtual Private Cloud → Internet Gateways → Create Internet Gateway\
 Name tag: MyIGW 
 
 Select MyIGW → Actions → Attach to VPC \
 Available VPCs: select the VPC created in Step 1
-\
-\
+<br/>
+<br/>
+<br/>
 **4) Create Route Tables and Associate the Subnets.** <br/>
 VPC → Virtual Private Cloud → Route Tables \
 Notice there is a Route Table here. This is the Main (default) Route Table! \
@@ -85,15 +89,17 @@ VPC: select the VPC created in Step 1
 
 Select PrivateRouteTable → Actions → Edit Subnet Associations \
 Select the PrivateSubnet (IPv4 CIDR 10.16.0.**2**/24)
-\
-\
+<br/>
+<br/>
+<br/>
 **5) Add a Route to allow Internet traffic to the Public Subnets.** <br/>
 With the PublicRouteTable selected, \
 Routes (tab) → Edit Routes → Add Route\
 Destination: 0.0.0.0/0 \
 Target: select Internet Gateway, then MyIGW
-\
-\
+<br/>
+<br/>
+<br/>
 **6) Clean up!!** <br/>
 Virtual Private Cloud → Internet Gateways \
 Select MyIGW → Actions → Detach from VPC \
