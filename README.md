@@ -32,7 +32,7 @@ Avoid ranges all the way up to 10.10.y.z just to be safe \
 The Network ID for 10.16.0.0/16 is 10.16.y.z with a Subnet Mask of 255.255.0.0 (65,536 IP addresses). \
 We can Subnet this which means to divide Network ID into multiple networks. \
 If we wanted to, we can create multiple /24 subnets ranging from 10.16.0.z to 10.16.255.z \
-Your Network IDs will be 10.16.0.z, 10.16.1.z, 10.16.2.z, ... , 10.16.255.z (256 IP addresses per Subnet x 256 Individual Subnets = 65,536 IP addresses!) \
+Your Network IDs will be 10.16.0.z, 10.16.1.z, 10.16.2.z, ... , 10.16.255.z (256 IP addresses per /24 Subnet x 256 Individual Subnets = 65,536 IP addresses!) \
 IPv4 Addresses that you assign cannot end with a 0 or 255 (these are reserved), but Subnets can absolutely have these values.
 
 
