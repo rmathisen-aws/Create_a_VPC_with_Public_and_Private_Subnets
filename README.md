@@ -33,12 +33,14 @@ Subnet Name: **Private**Subnet \
 Availability Zone: us-east-1**b** \
 IPv4 CIDR block: 10.0.**2**.0/24
 \
+\
 **3) Create the Internet Gateway.** - allows you to connect the Public Subnet to the Internet! <br/>
 VPC → Virtual Private Cloud → Internet Gateways → Create Internet Gateway\
 Name tag: MyIGW 
 
 Select MyIGW → Actions → Attach to VPC \
 Available VPCs: select the VPC created in Step 1
+\
 \
 **4) Create Route Tables and Associate the Subnets.** <br/>
 VPC → Virtual Private Cloud → Route Tables \
@@ -61,13 +63,15 @@ VPC: select the VPC created in Step 1
 
 Select PrivateRouteTable → Actions → Edit Subnet Associations \
 Select the PrivateSubnet (IPv4 CIDR 10.0.**2**.0/24)
-
+\
+\
 **5) Add a Route to allow Internet traffic to the Public Subnets.** <br/>
 With the PublicRouteTable selected, \
 Routes (tab) → Edit Routes → Add Route\
 Destination: 0.0.0.0/0 \
 Target: select Internet Gateway, then MyIGW
-
+\
+\
 **6) Clean up!!** <br/>
 Virtual Private Cloud → Internet Gateways \
 Select MyIGW → Actions → Detach from VPC \
