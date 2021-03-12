@@ -50,12 +50,12 @@ VPC → Virtual Private Cloud → Subnets → Create Subnet\
 VPC ID: select the VPC created in Step 1 \
 Subnet Name: **Public**Subnet \
 Availability Zone: us-east-1**a** \
-IPv4 CIDR block: 10.16.0.**1**/24
+IPv4 CIDR block: 10.16.0.**10**/24
 
 VPC ID: select the VPC created in Step 1 \
 Subnet Name: **Private**Subnet \
 Availability Zone: us-east-1**b** \
-IPv4 CIDR block: 10.16.0.**2**/24
+IPv4 CIDR block: 10.16.0.**11**/24
 <br/>
 <br/>
 <br/>
@@ -79,7 +79,7 @@ Name Tag: PublicRouteTable \
 VPC: select the VPC created in Step 1
 
 Select PublicRouteTable → Actions → Edit Subnet Associations \
-Select the PublicSubnet (IPv4 CIDR 10.16.0.**1**/24)
+Select the PublicSubnet (IPv4 CIDR 10.16.0.**10**/24)
 \
 \
 \
@@ -88,7 +88,7 @@ Name Tag: PrivateRouteTable \
 VPC: select the VPC created in Step 1
 
 Select PrivateRouteTable → Actions → Edit Subnet Associations \
-Select the PrivateSubnet (IPv4 CIDR 10.16.0.**2**/24)
+Select the PrivateSubnet (IPv4 CIDR 10.16.0.**11**/24)
 <br/>
 <br/>
 <br/>
