@@ -42,8 +42,8 @@ IPv4 Addresses that you assign cannot end with a 0 or 255 (these are reserved), 
 If we wanted to, we could equally take the 10.16.0.0/16 to /28 \
 We would have the first (2) octects 10.16 being static, then have the freedom to change the next 12 binary values which would result in being able to create 4096 Subnets (2^12). <br/> Each /28 subnet has 16 IP addresses. \
 16 IP addresses per /28 Subnet x 4096 Individual Subnets = 65,536 IP addresses
-
-
+<br/>
+<br/>
 VPC → Virtual Private Cloud → Subnets → Create Subnet\
 VPC ID: select the VPC created in Step 1 \
 Subnet Name: **Public**Subnet \
