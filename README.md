@@ -22,6 +22,11 @@ Tenancy: Default \
 \
 Keep in mind that Networks with the same IP address ranges cannot communicate with each other. When picking an IP address range, you need to think about other ranges that you'll potentially be communicating with (ranges used in AWS, for on premises networks, for partners, for venders, for customers, etc). Don't just randomly pick IP ranges, or choose default ranges. It may cause difficulties in the future. Talk to the IT staff of the business! Thoroughly understand which ranges out AWS Network design cannot use. We cannot have overlapping networks. \
 \
+10.0.y.z - this is probably one of the most common address ranges because it's used as a default \
+10.1.y.z - this is probably the 2nd most commonly used ranges, as it's a way to avoid the default of 10.0.y.z \
+Avoid ranges all the way up to 10.10.y.z just to be safe \
+10.16.0.0 - this might be a good starting point as it will most likely be not common to use. But, once again, check with the IT staff!
+\
 \
 **2) Create the Public & Private Subnets.** <br/>
 VPC → Virtual Private Cloud → Subnets → Create Subnet\
