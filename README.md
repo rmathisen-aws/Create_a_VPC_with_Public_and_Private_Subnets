@@ -3,6 +3,7 @@
 **Date:** 3/11/2021 \
 \
 **Summary:** \
+Create a VPC with a /16 CIDR block that doesn't overlap/interfere with other networks. Create /24 Public and Private Subnets. Associate Subnets to Route Tables. Allow the Public Subnet access to the Internet via the Internet Gateway.
 <br/>
 **Reason & Reflection:** \
 I think it's important to know how to properly set up a VPC, along with the Public & Private Subnets. Looking at multiple resources, I noticed that some resources tell you to associate the Public & Private Subnets to a Route Table, whereas other resources say to only associate the Private Subnet to the Route Table. This led me down a rabbit hole of trying to figure out which method is correct. While doing this research, I've learned more about Networking (subnet mask; network id; host id; CIDR) and reinforcing the concepts that I already understand through different instructors. 
