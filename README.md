@@ -33,7 +33,7 @@ Avoid ranges all the way up to 10.10.y.z just to be safe \
 The Network ID for 10.16.0.0/16 is 10.16.y.z with a Subnet Mask of 255.255.0.0 (65,536 IP addresses). \
 We can Subnet this which means to divide Network ID into multiple networks. \
 If we wanted to, we can create multiple /24 subnets ranging from 10.16.0.z to 10.16.255.z \
-Your Network IDs will be 10.16.0.0, 10.16.1.z, 10.16.2.z, ... , 10.16.255.z 
+Your Network IDs will be 10.16.0.z, 10.16.1.z, 10.16.2.z, ... , 10.16.255.z 
 
 If we wanted to subnet the 10.16.0.0/16 to /24,
 we would have the first (2) octects 10.16 being static, then have the freedom to change the next 8 binary values which would result in being able to create 256 Subnets (2^8). <br/> Each /28 subnet has 16 IP addresses. \
