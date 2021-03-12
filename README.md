@@ -17,7 +17,7 @@ Notice that there is a VPC that's already been created. This is the Default VPC 
 Rename this VPC to 'Default_VPC'
 
 VPC → Virtual Private Cloud → Your VPCs → Create VPC \
-IPv4 CIDR block: 10.0.0.0/16 (Choose a CIDR block with caution!)\
+IPv4 CIDR block: 10.0.0.0/16 (Choose a CIDR block with caution!)...Lets use 10.16.0.0/16 \
 Tenancy: Default \
 \
 Keep in mind that Networks with the same IP address ranges cannot communicate with each other. When picking an IP address range, you need to think about other ranges that you'll potentially be communicating with (ranges used in AWS, for on premises networks, for partners, for venders, for customers, etc). Don't just randomly pick IP ranges, or choose default ranges. It may cause difficulties in the future. Talk to the IT staff of the business! Thoroughly understand which ranges out AWS Network design cannot use. We cannot have overlapping networks. \
@@ -29,6 +29,12 @@ Avoid ranges all the way up to 10.10.y.z just to be safe \
 \
 \
 **2) Create the Public & Private Subnets.** <br/>
+The Network ID for 10.16.0.0/16 is 10.16.y.z with a Subnet Mask of 255.255.0.0 (65,536 IP addresses). \
+We can Subnet this which means to divide Network ID into multiple networks. \
+If we wanted to, we can create multiple /24 subnets ranging from 10.16.0.z to 10.16.255.z \
+Your Network IDs will be 10.16.0.z, 10.16.1.z, 10.16.2.z, ... , 10.16.255.z \
+
+
 VPC → Virtual Private Cloud → Subnets → Create Subnet\
 VPC ID: select the VPC created in Step 1 \
 Subnet Name: **Public**Subnet \
