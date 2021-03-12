@@ -19,8 +19,8 @@ VPC → Virtual Private Cloud → Your VPCs → Create VPC \
 IPv4 CIDR block: 10.0.0.0/16 \
 Tenancy: Default \
 \
-Keep in mind that Networks with the same IP address ranges cannot communicate with each other. When picking an IP address range, you need to think about other ranges that you'll potentially be communicating with (ranges used in AWS, for on premises networks, for partners, for venders, for customers, etc). Don't just randomly pick IP ranges, or choose default ranges. It may cause difficulties in the future.
-
+Keep in mind that Networks with the same IP address ranges cannot communicate with each other. When picking an IP address range, you need to think about other ranges that you'll potentially be communicating with (ranges used in AWS, for on premises networks, for partners, for venders, for customers, etc). Don't just randomly pick IP ranges, or choose default ranges. It may cause difficulties in the future. \
+\
 **2) Create the Public & Private Subnets.** <br/>
 VPC → Virtual Private Cloud → Subnets → Create Subnet\
 VPC ID: select the VPC created in Step 1 \
@@ -32,14 +32,14 @@ VPC ID: select the VPC created in Step 1 \
 Subnet Name: **Private**Subnet \
 Availability Zone: us-east-1**b** \
 IPv4 CIDR block: 10.0.**2**.0/24
-
+\
 **3) Create the Internet Gateway.** - allows you to connect the Public Subnet to the Internet! <br/>
 VPC → Virtual Private Cloud → Internet Gateways → Create Internet Gateway\
 Name tag: MyIGW 
 
 Select MyIGW → Actions → Attach to VPC \
 Available VPCs: select the VPC created in Step 1
-
+\
 **4) Create Route Tables and Associate the Subnets.** <br/>
 VPC → Virtual Private Cloud → Route Tables \
 Notice there is a Route Table here. This is the Main (default) Route Table! \
