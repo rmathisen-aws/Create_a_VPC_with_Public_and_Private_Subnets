@@ -20,7 +20,7 @@ VPC → Virtual Private Cloud → Your VPCs → Create VPC \
 IPv4 CIDR block: 10.0.0.0/16 (Choose a CIDR block with caution!)\
 Tenancy: Default \
 \
-Keep in mind that Networks with the same IP address ranges cannot communicate with each other. When picking an IP address range, you need to think about other ranges that you'll potentially be communicating with (ranges used in AWS, for on premises networks, for partners, for venders, for customers, etc). Don't just randomly pick IP ranges, or choose default ranges. It may cause difficulties in the future. \
+Keep in mind that Networks with the same IP address ranges cannot communicate with each other. When picking an IP address range, you need to think about other ranges that you'll potentially be communicating with (ranges used in AWS, for on premises networks, for partners, for venders, for customers, etc). Don't just randomly pick IP ranges, or choose default ranges. It may cause difficulties in the future. Talk to the IT staff of the business! \
 \
 \
 **2) Create the Public & Private Subnets.** <br/>
