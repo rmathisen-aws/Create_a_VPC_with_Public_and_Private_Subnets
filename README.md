@@ -93,7 +93,8 @@ Select the PrivateSubnet (IPv4 CIDR 10.16.**2**.0/24)
 <br/>
 <br/>
 **5) Add a Route to allow Internet traffic to the Public Subnets.** <br/>
-With the PublicRouteTable selected, \
+With the **Public**RouteTable selected, \
+(make sure it's the PublicRouteTable selected, not the Private, because we DO NOT want the Public Internet to be able to access any Private Subnets!)\
 Routes (tab) → Edit Routes → Add Route\
 Destination: 0.0.0.0/0 \
 Target: select Internet Gateway, then MyIGW
