@@ -75,7 +75,7 @@ Feel free to rename (MainRouteTable)
 \
 \
 VPC → Virtual Private Cloud → Route Tables → Create Route Table \
-Name Tag: PublicRouteTable \
+Name Tag: **Public**RouteTable \
 VPC: select the VPC created in Step 1
 
 Select PublicRouteTable → Actions → Edit Subnet Associations \
@@ -84,7 +84,7 @@ Select the PublicSubnet (IPv4 CIDR 10.16.**1**.0/24)
 \
 \
 Create another Route Table with the following settings \
-Name Tag: PrivateRouteTable \
+Name Tag: **Private**RouteTable \
 VPC: select the VPC created in Step 1
 
 Select PrivateRouteTable → Actions → Edit Subnet Associations \
