@@ -35,12 +35,12 @@ If we wanted to, we can create multiple /24 subnets ranging from 10.16.0.z to 10
 Your Network IDs will be 10.16.0.0, 10.16.1.z, 10.16.2.z, ... , 10.16.255.z 
 
 If we wanted to subnet the 10.16.0.0/16 to /24,
-we would have the first (2) octects 10.16 being static, then have the freedom to change the next 8 binary values which would result in being able to create 256 Subnets (2^8). \ Each /28 subnet has 16 IP addresses. \
+we would have the first (2) octects 10.16 being static, then have the freedom to change the next 8 binary values which would result in being able to create 256 Subnets (2^8). <br/> Each /28 subnet has 16 IP addresses. \
 256 IP addresses per /24 Subnet x 256 Individual Subnets = 65,536 IP addresses! \
 IPv4 Addresses that you assign cannot end with a 0 or 255 (these are reserved), but Subnets can absolutely have these values.
 
 If we wanted to, we could equally take the 10.16.0.0/16 to /28 \
-We would have the first (2) octects 10.16 being static, then have the freedom to change the next 12 binary values which would result in being able to create 4096 Subnets (2^12). \ Each /28 subnet has 16 IP addresses. \
+We would have the first (2) octects 10.16 being static, then have the freedom to change the next 12 binary values which would result in being able to create 4096 Subnets (2^12). <br/> Each /28 subnet has 16 IP addresses. \
 16 IP addresses per /28 Subnet x 4096 Individual Subnets = 65,536 IP addresses
 
 
