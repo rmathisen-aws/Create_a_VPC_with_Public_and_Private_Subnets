@@ -1,4 +1,4 @@
-**Title:** \
+**Title:** Creating a VPC with Public and Private Subnets \
 **Name:** Robert Mathisen\
 **Date:** 3/11/2021 \
 \
